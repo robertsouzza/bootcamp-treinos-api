@@ -37,11 +37,6 @@ await app.register(fastifySwagger, {
   transform: jsonSchemaTransform,
 });
 
-/*
-await app.register(fastifySwaggerUI, {
-  routePrefix: "/docs",
-});*/
-
 await app.register(fastifyCors, {
   origin: ["http://localhost:3000"],
   credentials: true,
